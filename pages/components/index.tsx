@@ -13,7 +13,7 @@ export const ImgBox = styled.div`
     width: 100%;
     height: 100%; 
     //teste
-    background: linear-gradient(225deg,#340012,#002130);
+    background: linear-gradient(225deg,#27002c,#011118);
     z-index: 1;
     mix-blend-mode: screen;
   }
@@ -35,7 +35,7 @@ export const ImgBox = styled.div`
     height: 100%;
     z-index: 1;
     &:before{      
-      background: linear-gradient(225deg,#830000,#002130);
+      background: linear-gradient(225deg,#34003a,#011118);
     }
   }
 `;
@@ -46,7 +46,7 @@ export const ContentBox = styled.div`
   align-items: center;
   //background: linear-gradient(90deg,#fa1660,#ff6e00);
   //ajuste
-  background: linear-gradient(225deg,#420017,#011924);
+  background: linear-gradient(225deg,rgb(52 0 78),#00151e);
   width: 50%;
   height: 100%;
 
@@ -70,7 +70,7 @@ export const FormBox = styled.div`
     font-size: 1.5rem;
     text-transform: uppercase;
     margin-bottom: 20px;
-    border-bottom: 4px solid #fc3c36;
+    border-bottom: 4px solid rgb(181, 53, 246);;
     display: inline-block;
     letter-spacing: 1px;
   }
@@ -121,7 +121,7 @@ export const InputBox = styled.div`
     padding: 10px 20px;
     outline: none;
     font-weight: 400;
-    border: 1px solid #fc3c36;
+    border: 1px solid rgb(181, 53, 246);;
     font-size: 16px;
     letter-spacing: 1px;
     color: whitesmoke;
@@ -130,7 +130,7 @@ export const InputBox = styled.div`
   }
 
   input[type="submit"] {
-    background: #fc3c36;
+    background: rgb(181, 53, 246);;
     color: #fff;
     outline: none;
     border: none;
@@ -139,7 +139,7 @@ export const InputBox = styled.div`
   }
 
   input[type="submit"]:hover {
-    background: #dd332e;
+    background: #950a95;
   }
 
   p {
@@ -148,7 +148,7 @@ export const InputBox = styled.div`
   }
 
   p a {
-    color: #fc3c36;
+    color: rgb(181, 53, 246);;
     text-decoration: underline;
   }
 `;
@@ -188,7 +188,7 @@ export const SocialIcon = styled.a`
   transition: 0.3;
 
   &:hover {
-    color: #fc3c36;
-    border-color: #fc3c36;
+    color: rgb(181, 53, 246);;
+    border-color: rgb(181, 53, 246);;
   }
 `;

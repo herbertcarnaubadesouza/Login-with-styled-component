@@ -19,7 +19,7 @@ const LoginAndRegister: NextPage = () => {
   return (
     <Body>
       <ImgBox>
-        <img src="images/backImg.png" alt="" />
+        <img src="images/backImg.jpg" alt="" />
       </ImgBox>
 
       <ContentBox>
