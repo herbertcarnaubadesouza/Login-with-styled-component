@@ -13,7 +13,7 @@ import {
   Remember,
   SocialIcon,
   SocialMedia,
-} from "./components";
+} from "./components/login";
 
 const LoginAndRegister: NextPage = () => {
   return (
