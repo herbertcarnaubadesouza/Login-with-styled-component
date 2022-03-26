@@ -121,7 +121,7 @@ export const InputBox = styled.div`
     padding: 10px 20px;
     outline: none;
     font-weight: 400;
-    border: 1px solid rgb(181, 53, 246);;
+    border: 1px solid rgb(181, 53, 246);
     font-size: 16px;
     letter-spacing: 1px;
     color: whitesmoke;
@@ -130,7 +130,7 @@ export const InputBox = styled.div`
   }
 
   input[type="submit"] {
-    background: rgb(181, 53, 246);;
+    background: rgb(181, 53, 246);
     color: #fff;
     outline: none;
     border: none;
@@ -148,7 +148,7 @@ export const InputBox = styled.div`
   }
 
   p a {
-    color: rgb(181, 53, 246);;
+    color: rgb(181, 53, 246);
     text-decoration: underline;
   }
 `;
@@ -188,7 +188,7 @@ export const SocialIcon = styled.a`
   transition: 0.3;
 
   &:hover {
-    color: rgb(181, 53, 246);;
-    border-color: rgb(181, 53, 246);;
+    color: rgb(181, 53, 246);
+    border-color: rgb(181, 53, 246);
   }
 `;
