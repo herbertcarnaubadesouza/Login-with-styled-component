@@ -1,8 +1,18 @@
 import type { NextPage } from "next";
-import { PricingCard } from "../components/PricingCard";
+import { Footer } from "../components/Footer";
+import { Header } from "../components/Header";
+import { HomeContainer } from "../components/HomeContainer";
 
 const Home: NextPage = () => {
-  return <PricingCard price={99.99} />;
+  return (
+    <>
+      <Header />
+      <HomeContainer>
+        Conteudo
+      </HomeContainer>
+      <Footer />
+    </>
+  );
 };
 
 export default Home;
