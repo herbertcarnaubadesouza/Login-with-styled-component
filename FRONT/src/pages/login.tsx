@@ -1,5 +1,9 @@
-import { faFacebookF, faGoogle } from "@fortawesome/free-brands-svg-icons";
+import {
+  faFacebookF,
+  faGoogle,
+} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import type { NextPage } from "next";
 import {
   Body,
   ContentBox,
@@ -9,21 +13,19 @@ import {
   Remember,
   SocialIcon,
   SocialMedia,
-} from "./components/register";
+} from "../components/login";
 
-const register = () => {
+const LoginAndRegister: NextPage = () => {
   return (
     <Body>
-     
+      <ImgBox>
+        <img src="images/backImg.jpg" alt="" />
+      </ImgBox>
+
       <ContentBox>
         <FormBox>
-          <h2>Sign Up</h2>
-
+          <h2>Login</h2>
           <form>
-            <InputBox>
-              <span>Email</span>
-              <input type="text" name="" />
-            </InputBox>
             <InputBox>
               <span>Username</span>
               <input type="text" name="" />
@@ -32,17 +34,22 @@ const register = () => {
               <span>Password</span>
               <input type="password" name="" />
             </InputBox>
-
+            <Remember>
+              <label>
+                <input type="checkbox" name="" />
+                Remember me
+              </label>
+            </Remember>
             <InputBox>
-              <input type="submit" value="Sign Up" name="" />
+              <input type="submit" value="Sign In" name="" />
             </InputBox>
             <InputBox>
               <p>
-                Already have an account? <a href="#">Sign in</a>
+                Don't have an account? <a href="#">Sign up</a>
               </p>
             </InputBox>
           </form>
-          <h3>Sign Up with </h3>
+          <h3>Login with social media</h3>
           <SocialMedia>
             <SocialIcon>
               <FontAwesomeIcon icon={faFacebookF} />
@@ -53,12 +60,8 @@ const register = () => {
           </SocialMedia>
         </FormBox>
       </ContentBox>
-
-      <ImgBox>
-        <img src="images/register.jpg" alt="" />
-      </ImgBox>
     </Body>
   );
 };
 
-export default register;
+export default LoginAndRegister;
