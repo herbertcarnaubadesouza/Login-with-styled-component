@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
-import { CourseCard } from "./components/CourseCard";
+import { PricingCard } from "./components/PricingCard";
 
 const Home: NextPage = () => {
-  return <CourseCard imageURL="https://picsum.photos/1600/900"/>;
+  return <PricingCard price={99.99} />;
 };
 
 export default Home;
