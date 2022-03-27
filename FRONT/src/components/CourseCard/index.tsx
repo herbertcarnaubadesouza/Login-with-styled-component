@@ -2,15 +2,21 @@ import { Container } from './styles'
 
 interface CourseCardProps {
   imageURL: string;
+  title: string;
+  description: string;
+  tag?: {
+    label?: string;
+    emphasis: string;
+  };
 }
 
-export function CourseCard({ imageURL }: CourseCardProps) {
+export function CourseCard({ imageURL, title, description, tag }: CourseCardProps) {
   return (
-    <Container image={imageURL} showTag>
-      <h2>Um curso com um título muito grande</h2>
-      <p className='tag'>TOP<span>5</span></p>
+    <Container image={imageURL} showTag={tag !== undefined}>
+      <h2>{title}</h2>
+      {tag && <p className='tag'>{tag?.label}<span>{tag?.emphasis}</span></p>}
       <hr />
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis aperiam doloribus saepe? Nobis, quam earum.</p>
+      <p>{description}</p>
     </Container>
   )
 }

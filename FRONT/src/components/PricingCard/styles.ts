@@ -14,7 +14,7 @@ export const Container = styled.div`
   border-radius: 0.25rem;
 
   background-image: linear-gradient(225deg,rgb(52 0 78),#00151e);
-  box-shadow: 8px 8px 8px rgb(0 0 0 / 0.4);
+  box-shadow: 4px 4px 1rem 0.2rem rgb(100 100 100 / 0.4);
 
   h3, p, ul {
     margin: 0;

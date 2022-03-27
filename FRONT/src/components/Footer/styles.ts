@@ -5,6 +5,8 @@ export const Container = styled.footer`
   flex-direction: column;
   gap: 2rem;
   align-items: center;
+  padding: 1rem 3rem;
+  padding-bottom: 3.5rem;
 
   nav.siteLinks {
     margin-bottom: 2rem;
@@ -65,5 +67,9 @@ export const Container = styled.footer`
         display: none;
       }
     }
+  }
+
+  p {
+    font-size: 0.9rem;
   }
 `;

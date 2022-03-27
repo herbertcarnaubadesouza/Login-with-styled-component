@@ -18,9 +18,9 @@ export const Container = styled.div<ContainerProps>`
 
   color: white;
   border-radius: 0.5rem;
-  box-shadow: 8px 8px 8px rgb(0 0 0 / 0.4);
+  box-shadow: 8px 8px 8px rgb(100 100 100 / 0.4);
 
-  background-image: linear-gradient(rgb(0 0 0 / 0.2), rgb(0 0 0 / 0.2)),
+  background-image: linear-gradient(rgb(100 100 100 / 0.2), rgb(100 100 100 / 0.2)),
                     linear-gradient(rgb(181 53 246 / 0.2), rgb(181 53 246 / 0.6)),
                     ${({ image }) => `url("${image}")`};
   background-repeat: no-repeat;
@@ -28,7 +28,7 @@ export const Container = styled.div<ContainerProps>`
   background-position: center;
 
   .tag {
-    display: ${({ showTag }) => showTag ? 'flex' : 'none'};
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;

@@ -1,11 +1,11 @@
 import React, { ReactChild } from 'react'
 import { Container } from './styles'
 
-interface HomeContainerProps {
+interface HomeContentProps {
   children?: ReactChild;
 }
 
-export function HomeContainer({ children }: HomeContainerProps) {
+export function HomeContent({ children }: HomeContentProps) {
   return (
     <Container>{children}</Container>
   )
