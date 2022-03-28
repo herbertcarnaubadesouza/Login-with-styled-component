@@ -14,6 +14,7 @@ import { Header } from "../components/Header";
 import { HomeContent } from "../components/HomeContent";
 import { PageContainer } from "../components/PageContainer";
 import { PricingCard } from "../components/PricingCard";
+import { HeaderBanner } from "../components/HeaderBanner";
 
 const Home: NextPage = () => {
   const swiper = useSwiper();
@@ -21,6 +22,7 @@ const Home: NextPage = () => {
   return (
     <PageContainer>
       <Header />
+      <HeaderBanner />
       <HomeContent>
         <>
           <div className="category">
@@ -133,11 +135,11 @@ const Home: NextPage = () => {
           </div>
 
           <div className="pricing">
-            <h2>Novos conteúdos</h2>
+            <h2>Planos</h2>
             <div className="pricing-content">
-              <PricingCard price={9.99} />
-              <PricingCard price={24.99} />
-              <PricingCard price={39.99} />
+              <PricingCard plan="básico" price={9.99} />
+              <PricingCard plan="Premium" price={24.99} />
+              <PricingCard plan="ultra" price={39.99} />
             </div>
           </div>
         </>

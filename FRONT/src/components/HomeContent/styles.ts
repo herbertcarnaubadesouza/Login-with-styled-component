@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.main`
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -42,6 +43,8 @@ export const Container = styled.main`
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    
+    margin-block: 3rem;
     
     h2 {
       text-transform: capitalize;

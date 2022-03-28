@@ -59,8 +59,11 @@ export const Container = styled.footer`
 
       font-size: 1.2rem;
 
+      transition: all 0.2s ease;
+
       &:hover, &:focus {
-        filter: brightness(0.7);
+        background-color: white;
+        color: black;
       }
 
       span {

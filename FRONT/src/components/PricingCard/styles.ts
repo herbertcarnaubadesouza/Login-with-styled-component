@@ -1,7 +1,7 @@
 import styled  from 'styled-components'
 
 export const Container = styled.div`
-  max-width: 300px;
+  width: 300px;
   aspect-ratio: 3 / 4;
 
   display: flex;
@@ -11,9 +11,10 @@ export const Container = styled.div`
 
   padding: 2rem 1.5rem;
   color: white;
-  border-radius: 0.25rem;
-
-  background-image: linear-gradient(225deg,rgb(52 0 78),#00151e);
+  border-radius: 0.5rem;
+  /* background-image: linear-gradient(225deg,rgb(65, 0, 99), #001721) */
+  /* background-image: linear-gradient(225deg, rgb(52 0 78), #00151e); */
+  background-image: linear-gradient(225deg, #7714A8, #00151e);
   box-shadow: 4px 4px 1rem 0.2rem rgb(100 100 100 / 0.4);
 
   h3, p, ul {

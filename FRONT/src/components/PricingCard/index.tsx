@@ -4,10 +4,11 @@ import { Button } from '../Button'
 import { Container } from './styles'
 
 interface PricingCardProps {
+  plan: string;
   price: number;
 }
 
-export function PricingCard({ price }: PricingCardProps) {
+export function PricingCard({ plan, price }: PricingCardProps) {
   const formmatedPrice = Intl.NumberFormat('pt-BR', {
     style: 'currency',
     currency: 'BRL'
@@ -16,7 +17,7 @@ export function PricingCard({ price }: PricingCardProps) {
   return (
     <Container>
       <div className="pricing-description">
-        <h3>premium</h3>
+        <h3>{plan}</h3>
         <p>{formmatedPrice}</p>
       </div>
       <ul>
