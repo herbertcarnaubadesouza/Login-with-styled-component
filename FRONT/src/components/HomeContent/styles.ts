@@ -17,6 +17,7 @@ export const Container = styled.main`
     
     h2 {
       text-transform: capitalize;
+      font-weight: 500;
     }
     
     .category-carousel {
@@ -36,6 +37,26 @@ export const Container = styled.main`
     }
     .swiper-button-disabled {
       display: none;
+    }
+  }
+
+  .debuts {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    flex: 1;
+    margin-top: 3rem;
+    
+    h2 {
+      text-transform: capitalize;
+      margin-inline: auto;
+      font-weight: 500;
+    }
+
+    a {
+      margin-inline: auto;
+      max-width: fit-content;
     }
   }
 

@@ -15,6 +15,8 @@ import { HomeContent } from "../components/HomeContent";
 import { PageContainer } from "../components/PageContainer";
 import { PricingCard } from "../components/PricingCard";
 import { HeaderBanner } from "../components/HeaderBanner";
+import { DebutSlider } from "../components/DebutSlider";
+import { LinkButton } from "../components/LinkButton";
 
 const Home: NextPage = () => {
   const swiper = useSwiper();
@@ -36,8 +38,6 @@ const Home: NextPage = () => {
                 draggable: true,
                 hide: true,
               }}
-              onSwiper={(swiper) => console.log(swiper)}
-              onSlideChange={() => console.log('slide change')}
               className="category-carousel"
             >
               <SwiperSlide>
@@ -79,10 +79,11 @@ const Home: NextPage = () => {
               </SwiperSlide>
             </Swiper>
           </div>
+
           <div className="category">
             <h2>Novos conteúdos</h2>
             <Swiper
-              modules={[Navigation, Scrollbar]}
+              modules={[ Navigation, Scrollbar ]}
               spaceBetween={20}
               slidesPerView={"auto"}
               navigation
@@ -90,8 +91,6 @@ const Home: NextPage = () => {
                 draggable: true,
                 hide: true,
               }}
-              onSwiper={(swiper) => console.log(swiper)}
-              onSlideChange={() => console.log('slide change')}
               className="category-carousel"
             >   
               <SwiperSlide>
@@ -133,6 +132,16 @@ const Home: NextPage = () => {
               </SwiperSlide>
             </Swiper>
           </div>
+
+          <section className="debuts">
+            <h2>Estreias que você não pode perder.</h2>
+
+            <DebutSlider>
+
+            </DebutSlider>
+            
+            <LinkButton href="#">Assine Agora</LinkButton>
+          </section>
 
           <div className="pricing">
             <h2>Planos</h2>
