@@ -25,6 +25,8 @@ export const Container = styled.footer`
         font-size: 1.5rem;
         line-height: 1;
         a {
+          transition: filter 0.2s ease;
+          
           &:after {
             content: "+";
             margin-left: 1rem;
@@ -33,7 +35,7 @@ export const Container = styled.footer`
 
           &:hover, &:focus {
             cursor: pointer;
-            filter: brightness(0.7);
+            filter: brightness(0.8);
           }
         }
 

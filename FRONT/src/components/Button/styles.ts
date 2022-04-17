@@ -14,7 +14,9 @@ export const Button = styled.button`
 
   text-transform: capitalize;
 
+  transition: filter 0.2s ease;
+
   &:hover, &:focus {
-    filter: brightness(0.85);
+    filter: brightness(0.8);
   }
 `;

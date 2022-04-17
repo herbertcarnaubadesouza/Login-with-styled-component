@@ -17,6 +17,8 @@ import { PricingCard } from "../components/PricingCard";
 import { HeaderBanner } from "../components/HeaderBanner";
 import { DebutSlider } from "../components/DebutSlider";
 import { LinkButton } from "../components/LinkButton";
+import { AvailablePlatforms } from "../components/AvailablePlatforms";
+import { HomeSection } from "../components/HomeSection";
 
 const Home: NextPage = () => {
   const swiper = useSwiper();
@@ -27,8 +29,7 @@ const Home: NextPage = () => {
       <HeaderBanner />
       <HomeContent>
         <>
-          <div className="category">
-            <h2>Em alta</h2>
+          <HomeSection title="Em alta" className="category">
             <Swiper
               modules={[Navigation, Scrollbar]}
               spaceBetween={20}
@@ -78,10 +79,9 @@ const Home: NextPage = () => {
                   description={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt deserunt, sapiente libero consequuntur quis consectetur."} />
               </SwiperSlide>
             </Swiper>
-          </div>
-
-          <div className="category">
-            <h2>Novos conteúdos</h2>
+          </HomeSection>
+          
+          <HomeSection title="Novos conteúdos" className="category">
             <Swiper
               modules={[ Navigation, Scrollbar ]}
               spaceBetween={20}
@@ -131,26 +131,37 @@ const Home: NextPage = () => {
                   description={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt deserunt, sapiente libero consequuntur quis consectetur."} />
               </SwiperSlide>
             </Swiper>
-          </div>
+          </HomeSection>
 
-          <section className="debuts">
-            <h2>Estreias que você não pode perder.</h2>
+          <HomeSection
+            title="Estreias que você não pode perder"
+            centerTitle
+            className="debuts"
+          >
+            <DebutSlider />
 
-            <DebutSlider>
-
-            </DebutSlider>
-            
             <LinkButton href="#">Assine Agora</LinkButton>
-          </section>
+          </HomeSection>
 
-          <div className="pricing">
-            <h2>Planos</h2>
+          <HomeSection
+            title="Disponível nos seus dispositivos preferidos"
+            centerTitle
+            className="available-devices"
+          >
+            <AvailablePlatforms />
+          </HomeSection>
+
+          <HomeSection
+            title="Planos"
+            centerTitle
+            className="pricing"
+          >
             <div className="pricing-content">
               <PricingCard plan="básico" price={9.99} />
               <PricingCard plan="Premium" price={24.99} />
               <PricingCard plan="ultra" price={39.99} />
             </div>
-          </div>
+          </HomeSection>
         </>
       </HomeContent>
       <Footer />

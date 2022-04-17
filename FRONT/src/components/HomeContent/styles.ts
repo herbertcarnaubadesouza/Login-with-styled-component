@@ -6,53 +6,43 @@ export const Container = styled.main`
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  gap: 3rem;
-
-  padding: 3rem;
+  margin-top: 3rem;
 
   .category {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    
-    h2 {
-      text-transform: capitalize;
-      font-weight: 500;
-    }
-    
-    .category-carousel {
-      /* padding-inline: 1.5rem; */
-    }
-
     .swiper-slide {
       width: auto;
     }
 
     .swiper-button-prev,
     .swiper-button-next {
+      --swiper-gradient-direction: -90deg;
       --swiper-navigation-size: 1.2rem;
       font-weight: bold;
 
+      width: 4rem;
+      height: 100%;
+      top: 0;
+      margin-top: 0;
+      background-image: linear-gradient(var(--swiper-gradient-direction), transparent, rgb(0 0 0 / 0.3) 25%, rgb(0 0 0 / 0.7));
+
       color: white;
     }
+
+    .swiper-button-prev {
+      left: 0;
+    }
+    .swiper-button-next {
+      --swiper-gradient-direction: 90deg;
+      right: 0;
+    }
+
     .swiper-button-disabled {
       display: none;
     }
   }
 
   .debuts {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    width: 100%;
-    flex: 1;
     margin-top: 3rem;
-    
-    h2 {
-      text-transform: capitalize;
-      margin-inline: auto;
-      font-weight: 500;
-    }
 
     a {
       margin-inline: auto;
@@ -60,16 +50,14 @@ export const Container = styled.main`
     }
   }
 
-  .pricing {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    
+  .available-devices {
     margin-block: 3rem;
-    
-    h2 {
-      text-transform: capitalize;
-    }
+    background-color: rgb(119 20 168 / 0.35);
+  }
+
+  .pricing {
+    margin-bottom: 3rem;
+
     .pricing-content {
       display: flex;
       justify-content: center;
