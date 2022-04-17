@@ -74,3 +74,9 @@ export const Container = styled.div`
     display: none;
   }
 `;
+
+export const InvisibleBlock = styled.div`
+  width: 2rem;
+  height: 2rem;
+  background: none;
+`

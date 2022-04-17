@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Container } from './styles'
+import { Container, InvisibleBlock } from './styles'
 import { Swiper, SwiperSlide, useSwiper, useSwiperSlide } from 'swiper/react'
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs'
 
@@ -66,9 +66,9 @@ export function DebutSlider({}: DebutSliderProps) {
         <DebutSlide name={'Nome do curso'} debutDate={new Date()} description={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum recusandae, odit eligendi doloribus nam itaque aperiam ducimus eos optio voluptatum excepturi asperiores, perspiciatis natus tempora!'} />
         </SwiperSlide>
         <div className="slider-controls">
-          {!isFirstSlide && <SwiperButtonPrev />}
+          {!isFirstSlide ? <SwiperButtonPrev /> : <InvisibleBlock />}
           <p className="slider-pagination" />
-          {!isLastSlide && <SwiperButtonNext />}
+          {!isLastSlide ? <SwiperButtonNext /> : <InvisibleBlock />}
         </div>
       </Swiper>
     </Container>

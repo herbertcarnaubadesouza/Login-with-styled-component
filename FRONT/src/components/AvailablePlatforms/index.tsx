@@ -18,7 +18,7 @@ export function AvailablePlatforms() {
       </div>
       <div className="platform">
         <div className="platform-info">
-          <img className='platform-image' src="/images/smartphone.png" />
+          <img className='platform-image' src="/images/tabletSmartphone.png" />
           <h3 className="platform-name">Smartphones e Tablet</h3>
         </div>
         <hr />
